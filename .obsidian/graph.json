@@ -1,6 +1,6 @@
 {
-  "collapse-filter": true,
-  "search": "-path:Templates  ",
+  "collapse-filter": false,
+  "search": "-path:Templates  -path:Templates -file:README -path:Templates -file:Dashboard",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -39,6 +39,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 2.1283510404425665,
+  "scale": 2.108109432057446,
   "close": true
 }

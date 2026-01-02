@@ -18,10 +18,8 @@ You are given a 0-indexed array of integers `nums` of length `n`. You are initia
 
 Each element `nums[i]` represents the maximum length of a forward jump from index `i`. In other words, if you are at index `i`, you can jump to any index `(i + j)` where:
 
-	
-- `0 <= j <= nums[i]` and
-	
-- `i + j < n`
+	- `0 <= j <= nums[i]` and
+	- `i + j < n`
 
 Return *the minimum number of jumps to reach index *`n - 1`. The test cases are generated such that you can reach index `n - 1`.
 
@@ -47,9 +45,10 @@ Return *the minimum number of jumps to reach index *`n - 1`. The test cases are 
 
 ---
 
-## 💡 Solution 1: (Name)
+## 💡 Solution 1: BFS
 ### Approach
-- 
+- BFS: Find the shortest route based on the count of jump (level)
+- Only check the farthest leap, which is greedy
 
 ### Complexity Analysis
 - **Time Complexity**: O(n)
@@ -71,11 +70,13 @@ class Solution(object):
 
         for i in range(0, n-1):
             farthest = max(farthest, i+nums[i])
-
+			
+			# have to jump one more time
             if i == current_end:
                 cnt += 1
                 current_end = farthest
-
+				
+				# if already reached the last index
                 if current_end >= n-1:
                     return cnt
         
@@ -85,33 +86,41 @@ class Solution(object):
 
 ---
 
-## 💡 Solution 2: (Name)
+## 💡 Solution 2: Tailor Solution 1
 ### Approach
-- 
+- return 0 instead of using count
+- use break instead of return
 
 ### Complexity Analysis
 - **Time Complexity**: O(n)
 - **Space Complexity**: O(1)
 
 ```python
-# Solution 2 Code Here
+class Solution(object):
+    def jump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n = len(nums)
+        if n == 1: return 0  # direct return instead of using cnt
+        
+        cnt = 0
+        current_end = 0
+        farthest = 0
+        
+        for i in range(n - 1):
+            farthest = max(farthest, i + nums[i])
+            
+            if i == current_end:
+                cnt += 1
+                current_end = farthest
+                
+                if current_end >= n - 1:
+                    break  # Slightly cleaner than return
+        
+        return cnt
 ```
-
-
----
-
-## 💡 Solution 3: (Name)
-### Approach
-- 
-
-### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
-
-```python
-# Solution 3 Code Here
-```
-
 
 ---
 
@@ -119,4 +128,9 @@ class Solution(object):
 No hints available.
 
 ### Reflections
--
+- Breadth-First Search: queue, FIFO - In this problem, the following part acts as pushing to the queue: 
+```python
+  farthest = max(farthest, i + nums[i])
+  ```
+- Implicit BFS
+- Depth-First Search: stack, LIFO

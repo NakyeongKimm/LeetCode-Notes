@@ -2,6 +2,9 @@
 
 Personal Obsidian vault for tracking coding problem solutions and algorithm study. Automatically backed up from my local environment.
 
+## 🌐 Knowledge Graph
+![Obsidain Graph View](assets/graph-view.png)
+
 ## Status
 - In progress. 
 
