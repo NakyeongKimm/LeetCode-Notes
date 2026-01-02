@@ -251,17 +251,54 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "3e3d38717e3812d3",
+  "floating": {
+    "id": "6c00d50a31db0660",
+    "type": "floating",
+    "children": [
+      {
+        "id": "ce6402eaa2539a86",
+        "type": "window",
+        "children": [
+          {
+            "id": "9f0ee6d79ebe4dfd",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "940d1efcadb454fd",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "New tab"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 223,
+        "y": 34,
+        "width": 1024,
+        "height": 800,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "940d1efcadb454fd",
   "lastOpenFiles": [
+    "README.md",
     "assets/graph-view.png",
     "assets/Screenshot 2026-01-02 at 6.19.56 PM.png",
     "Screenshot 2026-01-02 at 6.19.56 PM.png",
     "assets",
     "LeetCode-Solutions/Jump Game II.md",
-    "README.md",
     "LeetCode Dashboard.md",
     "Templates/stratascratch-problem-template.md",
     "StrataScratch Dashboard.md",
