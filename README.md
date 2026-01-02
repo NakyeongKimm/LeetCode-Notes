@@ -1,9 +1,12 @@
-# My Leetcode Practice Vault 
+# 2026 Daily Coding Challenge
 
 Personal Obsidian vault for tracking coding problem solutions and algorithm study. Automatically backed up from my local environment.
 
+## Status
+- In progress. 
+
 ##  Purpose
-- Practice **LeetCode** (Mainly Algorithms & some SQL) and **StrataScratch** (Advanced SQL).
+- Practice **LeetCode** (Mainly Algorithms & some SQL) and **StrataScratch** (Advanced SQL) every day.
 - Build a linked knowledge base for technical interviews using Obsidian.
 
 ##  Features
