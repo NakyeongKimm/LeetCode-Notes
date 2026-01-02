@@ -1,5 +1,5 @@
 {
-  "insert-template": [
+  "templater-obsidian:create-Templates/LC-Template.md": [
     {
       "modifiers": [
         "Mod",
