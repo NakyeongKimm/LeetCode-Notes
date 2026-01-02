@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LeetCode-Solutions/Valid Anagram.md",
+                "file": "StrataScratch-Solutions/10299. Finding Updated Records.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Valid Anagram"
+              "title": "10299. Finding Updated Records"
             }
           },
           {
@@ -55,16 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LeetCode-Solutions/Jump Game.md",
+                "file": "Templates/stratascratch-problem-template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jump Game"
+              "title": "stratascratch-problem-template"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -228,15 +228,21 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d860f2e938293032",
+  "active": "e70d792263e4999d",
   "lastOpenFiles": [
+    "Templates/stratascratch-problem-template.md",
+    "StrataScratch-Solutions/10299. Finding Updated Records.md",
     "LeetCode-Solutions/Valid Anagram.md",
-    "LeetCode-Solutions/Jump Game.md",
+    "StrataScratch-Solutions/SS-10299. Finding Updated Records.md",
+    "Templates/leetcode-problem-template.md",
     "LeetCode Dashboard.md",
+    "StrataScratch-Solutions",
+    "scripts/stratascratch-quickadd.js",
+    "scripts/leetcode-quickadd copy.js",
+    "LeetCode-Solutions/Jump Game.md",
     "Untitled 1.md",
     "Valid Anagram.md",
     "LeetCode-Solutions/valid-anagram.md",
-    "Templates/leetcode-problem-template.md",
     "valid anagram.md",
     "Templates/LC-Template.md",
     "scripts/leetcode-quickadd.js",
@@ -253,8 +259,6 @@
     "LC-Solutions",
     "Templates",
     "LC-Sol",
-    "untitled folder",
-    "my-leetcode",
     "README.md",
     "leetcode/lc-problems/16.3sum-closest.md",
     "leetcode/lc-problems/15.3sum.md",
@@ -262,10 +266,6 @@
     "Problem List.md",
     "leetcode/lc-topic/dynamic-programming.md",
     "leetcode/leetcode-solution-template.md",
-    "leetcode/leetcode-note-template.md",
-    "leetcode/leetcode.md",
-    "Welcome.md",
-    "leetcode/lc-topic",
     "bgs/A day in the corner of the city/黄昏.jpg",
     "bgs/A day in the corner of the city/清晨.png",
     "bgs/A day in the corner of the city/夜晚.jpg",

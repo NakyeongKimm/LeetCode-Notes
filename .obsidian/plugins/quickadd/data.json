@@ -4,7 +4,7 @@
       "id": "4bfec489-fe55-4ed0-b431-22cbfd535b09",
       "name": "Leetcode Puller",
       "type": "Macro",
-      "command": false,
+      "command": true,
       "runOnStartup": false,
       "macro": {
         "name": "Leetcode Puller",
@@ -44,6 +44,61 @@
               },
               "appendLink": false,
               "openFile": true,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "fileExistsMode": "Increment the file name",
+              "setFileExistsBehavior": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "4802a81a-8412-4952-83d9-cc5f88710a51",
+      "name": "StrataScratch Puller",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "StrataScratch Puller",
+        "id": "4145ffce-0853-4d47-9eed-c1660e1770fb",
+        "commands": [
+          {
+            "name": "stratascratch-quickadd",
+            "type": "UserScript",
+            "id": "bfa57587-ab42-4dbd-9c72-eb3fdb4143c3",
+            "path": "scripts/stratascratch-quickadd.js",
+            "settings": {}
+          },
+          {
+            "name": "Untitled Template Choice",
+            "type": "NestedChoice",
+            "id": "d2dc7028-ae44-4f11-9a48-227a38f0185e",
+            "choice": {
+              "id": "a0523b6d-5a15-4f74-b47c-abc28cf0569f",
+              "name": "Untitled Template Choice",
+              "type": "Template",
+              "command": false,
+              "templatePath": "Templates/stratascratch-problem-template.md",
+              "fileNameFormat": {
+                "enabled": true,
+                "format": "{{VALUE:fileName}}"
+              },
+              "folder": {
+                "enabled": true,
+                "folders": [
+                  "StrataScratch-Solutions"
+                ],
+                "chooseWhenCreatingNote": false,
+                "createInSameFolderAsActiveFile": false,
+                "chooseFromSubfolders": false
+              },
+              "appendLink": false,
+              "openFile": false,
               "fileOpening": {
                 "location": "tab",
                 "direction": "vertical",
