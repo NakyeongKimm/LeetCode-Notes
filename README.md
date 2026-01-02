@@ -2,9 +2,14 @@
 
 Personal Obsidian vault for tracking coding problem solutions and algorithm study. Automatically backed up from my local environment.
 
-## 🌐 Knowledge Graph
-![Obsidain Graph View](assets/graph-view.png)
+## Obsidian Knowledge Graph
+<p align="center">
+  <img src="assets/graph-view.png" width="800" title="Obsidian Graph View">
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Last%20Updated-2026--01--02-blue?style=flat-square">
+</p>
 ## Status
 - In progress. 
 
