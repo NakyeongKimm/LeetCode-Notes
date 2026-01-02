@@ -1,6 +1,6 @@
 ---
 created: 2026-01-01
-completed: false
+completed: true
 leetcode-index: 242
 link: https://leetcode.com/problems/valid-anagram
 difficulty: Easy
@@ -44,68 +44,89 @@ Given two strings `s` and `t`, return `true` if `t` is an <span data-keyword="an
 
 ## 💡 Solution 1: Hash
 ### Approach
-- Use Hash map with dictionary
+- Use the concept of Hash map with a dictionary
 
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
 
 ```python
 class Solution:
+	def isAnagram(self, s: str, t: str) -> bool:
+		if len(s) != len(t): return False
+		save = {}
 
-def isAnagram(self, s: str, t: str) -> bool:
-
-if len(s) != len(t): return False
-
-save = {}
-
-for letter in s:
-
-save[letter] = save.get(letter, 0) + 1
-
-  
-
-for char in t:
-
-if char not in save or save[char] == 0:
-
-return False
-
-save[char] -= 1
-
-  
-
-return True
+		for letter in s:	
+			save[letter] = save.get(letter, 0) + 1
+		
+		  
+		
+		for char in t:
+			if char not in save or save[char] == 0:
+				return False
+		
+			save[char] -= 1
+		
+		return True
 ```
 
 
 ---
 
-## 💡 Solution 2: (Name)
+## 💡 Solution 2: Unicode Integer
 ### Approach
-- 
+- First, raise false when the length of two strings don't match
+- Use UNICODE integer
 
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
 
 ```python
-# Solution 2 Code Here
+# For ASCII
+
+class Solution:
+
+	def isAnagram(self, s: str, t: str) -> bool:
+	
+		if len(s) != len(t): return False
+		
+		count = [0] * 26
+		
+		for char in s:
+			count[ord(char) - ord('a')] += 1
+		
+		for char in t:	
+			if count[ord(char) - ord('a')] == 0:
+				return False
+		
+			count[ord(char) - ord('a')] -= 1	  
+		
+		return True
 ```
 
 
 ---
 
-## 💡 Solution 3: (Name)
+## 💡 Solution 3: Counter
 ### Approach
-- 
+- Use Counter 
 
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
 
 ```python
-# Solution 3 Code Here
+from collections import Counter
+
+class Solution:
+
+	def isAnagram(self, s: str, t: str) -> bool:
+	
+		if len(s) != len(t):
+			return False
+	
+		return Counter(s) == Counter(t)
 ```
 
 
@@ -115,4 +136,7 @@ return True
 No hints available.
 
 ### Reflections
--
+- Get used to the function 'ord' and class 'Counter'
+	- ord is a built-in function that takes a single character as input and returns its corresponding Unicode integer value.
+	- Counter is a class from Python library 'collections' that counts the occurrences of each element in an iterable and returns it as a dictionary-like object.
+	
