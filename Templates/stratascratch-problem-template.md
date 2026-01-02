@@ -1,42 +1,32 @@
 ---
 platform: StrataScratch
-created: {{DATE}}
-link: {{VALUE:link}}
-difficulty: {{VALUE:difficulty}}
+created:
+  "{ DATE }":
+link:
+  "{ VALUE:link }":
+difficulty:
+  "{ VALUE:difficulty }":
 tags:
-   - programming/practice
-   - stratascratch
-   - {{VALUE:tag}}
+  - SQL
 ---
-
 # {{VALUE:id}}. {{VALUE:title}}
 
-> [!info] 📝 Problem Description
-> (Paste the problem description here)
+## 📝 Problem Description
+(Paste the problem description here)
 
 ---
 
-> [!check] 💡 SQL Solution
-> ### Complexity Analysis
-> - **Time Complexity**: $O()$
-> - **Space Complexity**: $O()$
-> 
-> ```sql
-> -- Your SQL Code Here
-> ```
+## 💡 SQL Solution
+### Approach
+- 
+### Complexity Analysis
+- **Time Complexity**: $O(n \log n)$
+- **Space Complexity**: $O(n)$
 
----
+```sql
+-- Your SQL Code Here
+```
 
-> [!example] 💡 Python Solution (Optional)
-> ```python
-> # Your Python Code Here
-> ```
-
----
-
-> [!abstract] 📓 Logic & Reflections
-> ### Key Logic
-> - 
-> 
-> ### Reflections
-> -
+--- 
+## 📓Reflections
+- 

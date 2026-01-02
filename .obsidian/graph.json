@@ -1,12 +1,34 @@
 {
   "collapse-filter": true,
-  "search": "",
-  "showTags": false,
+  "search": "-path:Templates  ",
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:LeetCode-Solutions  ",
+      "color": {
+        "a": 1,
+        "rgb": 16776960
+      }
+    },
+    {
+      "query": "path:StrataScratch-Solutions  ",
+      "color": {
+        "a": 1,
+        "rgb": 65322
+      }
+    },
+    {
+      "query": "path:Templates  ",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +39,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.22668171571253715,
+  "scale": 1.666403314210369,
   "close": true
 }
