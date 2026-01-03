@@ -9,7 +9,7 @@ difficulty:
 tags:
   - SQL
 ---
-# {{VALUE:title}}
+# Bikes Last Used
 
 ## 📝 Problem Description
 (Paste the problem description here)
