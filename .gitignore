@@ -1,0 +1,9 @@
+# Obsidian system folder
+.obsidian/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Workspace data
+workspace.json
