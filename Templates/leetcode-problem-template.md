@@ -1,14 +1,14 @@
 ---
-created: {{DATE}}
+created: "{{date}}"
 completed: false
-leetcode-index: {{VALUE:id}} 
-link: {{VALUE:link}}
-difficulty: {{VALUE:difficulty}} 
+leetcode-index: "{{VALUE:id}}"
+link: "{{VALUE:link}}"
+difficulty: "{{VALUE:difficulty}}"
 tags:
-{{VALUE:tags}} 
-   - programming/practice
-   - leetcode/problem
+  - programming/practice
+  - leetcode/problem
 ---
+
 # {{VALUE:title}}
 
 ## 📝 Problem Description

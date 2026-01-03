@@ -1,14 +1,11 @@
 ---
 platform: StrataScratch
-created:
-  "{ DATE }":
-link:
-  "{ VALUE:link }":
-difficulty:
-  "{ VALUE:difficulty }":
-tags:
-  - SQL
+created: "{{date}}"
+link: "{{VALUE:link}}"
+difficulty: "{{VALUE:difficulty}}"
+tags: [SQL]
 ---
+
 # {{VALUE:title}}
 
 ## 📝 Problem Description
