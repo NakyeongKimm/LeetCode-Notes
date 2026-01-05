@@ -40,11 +40,13 @@ According to the <a href="https://en.wikipedia.org/wiki/H-index" target="_blank"
 
 ## 💡 Solution 1: Sort
 ### Approach
-- sort the list first 
+- sort the list first
+- set h as the minimum between the number of publications and number of citations
+- break if the i+1 exceeds the number of citations
 
 ### Complexity Analysis
 - **Time Complexity**: O(nlogn)
-	- sort causes 
+	- sort function causes O(nlogn) time complexity
 - **Space Complexity**: O(1)
 
 ```python
@@ -72,11 +74,12 @@ class Solution(object):
 
 ## 💡 Solution 2: Bucket Counting
 ### Approach
-- 
+- Use bucket counting, which is technically making a new list that counts the frequency of the citation numbers
+- From the maximum, start comparing paper count and temporary h. Return h when h meets the conditions.
 
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(n)
 
 ```python
 class Solution(object):
