@@ -6,7 +6,7 @@ difficulty: Easy
 tags:
   - SQL
 ---
-
+s
 # Bikes Last Used
 
 ## 📝 Problem Description

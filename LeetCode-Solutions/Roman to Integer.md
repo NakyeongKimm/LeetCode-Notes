@@ -1,6 +1,6 @@
 ---
 created: 2026-01-05
-completed: false
+completed: true
 leetcode-index: "13"
 link: https://leetcode.com/problems/roman-to-integer
 difficulty: Easy
@@ -110,11 +110,12 @@ class Solution(object):
 
 ## 💡 Solution 2: Forward + Substring
 ### Approach
-- Make a whole set of possible values 
+- Make a whole set of possible values and check if specific cases with two characters exist or not.
+- Forward processing.
 
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
 
 ```python
 values = {
@@ -152,16 +153,40 @@ class Solution:
 
 ---
 
-## 💡 Solution 3: (Name)
+## 💡 Solution 3: Forward and Look ahead
 ### Approach
-- 
+- Forward processing but look ahead the next value
 
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
 
 ```python
-# Solution 3 Code Here
+values = {
+    "I": 1,
+    "V": 5,
+    "X": 10,
+    "L": 50,
+    "C": 100,
+    "D": 500,
+    "M": 1000,
+}
+
+
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        total = 0
+        i = 0
+        while i < len(s):
+            # If this is the subtractive case.
+            if i + 1 < len(s) and values[s[i]] < values[s[i + 1]]:
+                total += values[s[i + 1]] - values[s[i]]
+                i += 2
+            # Else this is NOT the subtractive case.
+            else:
+                total += values[s[i]]
+                i += 1
+        return total
 ```
 
 
@@ -172,4 +197,5 @@ class Solution:
 >Problem is simpler to solve by working the string from back to front and using a map.
 
 ### Reflections
--
+- Try to be more space efficient.
+	- for example, instead of calling the same value from the list twice, try to use the variable I already created.
