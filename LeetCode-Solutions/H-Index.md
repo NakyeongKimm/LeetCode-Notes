@@ -1,9 +1,9 @@
 ---
-created: "2026-01-04"
-completed: false
+created: 2026-01-04
+completed: true
 leetcode-index: "274"
-link: "https://leetcode.com/problems/h-index"
-difficulty: "Medium"
+link: https://leetcode.com/problems/h-index
+difficulty: Medium
 tags:
   - programming/practice
   - leetcode/problem
