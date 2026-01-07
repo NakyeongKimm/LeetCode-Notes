@@ -28,6 +28,21 @@ You must implement the functions of the class such that each function works in a
  
 
 >[!Example]+ Example 1
+>**Input**
+["RandomizedSet", "insert", "remove", "insert", "getRandom", "remove", "insert", "getRandom"]
+[], [1], [2], [2], [], [1], [2], []
+**Output**
+[null, true, false, true, 2, true, false, 2]
+> **Explanation**
+RandomizedSet randomizedSet = new RandomizedSet();
+randomizedSet.insert(1); // Inserts 1 to the set. Returns true as 1 was inserted successfully.
+randomizedSet.remove(2); // Returns false as 2 does not exist in the set.
+randomizedSet.insert(2); // Inserts 2 to the set, returns true. Set now contains [1,2].
+randomizedSet.getRandom(); // getRandom() should return either 1 or 2 randomly.
+randomizedSet.remove(1); // Removes 1 from the set, returns true. Set now contains [2].
+randomizedSet.insert(2); // 2 was already in the set, so return false.
+randomizedSet.getRandom(); // Since 2 is the only number in the set, getRandom() will always return 2.
+
 
 >[!warning]+ Constraints
 >- `-2^31 <= val <= 2^31 - 1`
@@ -44,7 +59,7 @@ You must implement the functions of the class such that each function works in a
 - insert: need dict to use idx
 - remove: need both dict and list
 	- dict to use idx
-	- list to actually remove the element using pop function
+	- list to actually remove the element using pop method
 - getRandom: need list to use random.choice
 
 ### Complexity Analysis
@@ -72,26 +87,26 @@ class RandomizedSet(object):
 		return True
 
 
-def remove(self, val):
-	if val not in self.num_to_idx: # O(1) check via dict
-		return False
+	def remove(self, val):
+		if val not in self.num_to_idx: # O(1) check via dict
+			return False
+		
+		idx = self.num_to_idx[val] # O(1) index retrieval (key reason for dict)
+		last_val = self.nums[-1]
 	
-	idx = self.num_to_idx[val] # O(1) index retrieval (key reason for dict)
-	last_val = self.nums[-1]
-
-	# Swap-and-pop: move last to deleted position
+		# Swap-and-pop: move last to deleted position
+		
+		self.nums[idx] = last_val
+		self.num_to_idx[last_val] = idx # Update moved element's index
+		
+		self.nums.pop() # O(1) removal from end
+		del self.num_to_idx[val]
+		
+		return True
+	  
 	
-	self.nums[idx] = last_val
-	self.num_to_idx[last_val] = idx # Update moved element's index
-	
-	self.nums.pop() # O(1) removal from end
-	del self.num_to_idx[val]
-	
-	return True
-  
-
-def getRandom(self):
-	return random.choice(self.nums) # Requires list (not set)
+	def getRandom(self):
+		return random.choice(self.nums) # Requires list (not set)
 ```
 
 
