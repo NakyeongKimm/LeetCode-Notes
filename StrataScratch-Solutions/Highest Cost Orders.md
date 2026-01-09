@@ -15,13 +15,15 @@ For simplicity, you can assume that every first name in the dataset is unique.
 
 ---
 
-## 💡 SQL Solution
+## 💡 SQL Solution 1
 ### Approach
-- 
+- Use two CTEs: the first CTE for aggregation and the second CTE for ranking
+- Use RANK() so that we can get multiple maximum datapoints
 ### Complexity Analysis
 - **Time Complexity**: $O(n \log n)$
 	- sorting: group by and rank
 - **Space Complexity**: $O(n)$
+	- to save common table expressions (temp tables for execution)
 
 ```sql
 WITH daily_total AS (
@@ -42,7 +44,36 @@ JOIN customers c ON rdt.cust_id = c.id
 WHERE rdt.rnk = 1
 ORDER BY rdt.order_date;
 ```
+---
+## 💡 SQL Solution 2: optimize solution 1
+### Approach
+- Make only one CTE instead of two
+### Complexity Analysis
+- **Time Complexity**: $O(n \log n)$
+	- sorting: group by and rank
+- **Space Complexity**: $O(n)$
+	- to save common table expressions (temp tables for execution)
+
+```sql
+WITH ranked_daily_total AS (
+    SELECT 
+        cust_id, 
+        order_date, 
+        SUM(total_order_cost) AS total_daily_cost,
+        RANK() OVER (PARTITION BY order_date ORDER BY SUM(total_order_cost) DESC) AS rnk
+    FROM orders
+    WHERE order_date BETWEEN '2019-02-01' AND '2019-05-01'
+    GROUP BY cust_id, order_date
+)
+SELECT c.first_name, rdt.order_date, rdt.total_daily_cost AS max_cost
+FROM ranked_daily_total rdt
+JOIN customers c ON rdt.cust_id = c.id
+WHERE rdt.rnk = 1
+ORDER BY rdt.order_date;
+```
+
 
 --- 
 ## 📓Reflections
-- 
+- RANK() allows **ties** but ROW_NUMBER assigns a unique number to every row.
+- Get used to using CTEs for better analysis.
