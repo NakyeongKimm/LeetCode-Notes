@@ -10,6 +10,7 @@ Personal Obsidian vault for tracking coding problem solutions and algorithm stud
 <p align="center">
   <img src="https://img.shields.io/badge/Last%20Updated-2026--01--02-blue?style=flat-square">
 </p>
+
 ## Schedule Log 
 - **Status**: in progress 
 - **Breaks & Maintenance**: 
