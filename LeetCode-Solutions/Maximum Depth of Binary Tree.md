@@ -44,7 +44,8 @@ A binary tree's maximum depth is the number of nodes along the longest path from
 
 ### Complexity Analysis
 - **Time Complexity**: O(N)
-- **Space Complexity**: O(N)
+- **Space Complexity**: O(H)
+	- H = max height
 
 ```python
 # Definition for a binary tree node.
@@ -91,7 +92,7 @@ class Solution(object):
 
 ### Complexity Analysis
 - **Time Complexity**: O(N)
-- **Space Complexity**: O(N)
+- **Space Complexity**: O(H)
 
 ```python
 class Solution(object):
