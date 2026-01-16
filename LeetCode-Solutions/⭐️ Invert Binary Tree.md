@@ -44,7 +44,7 @@ Given the `root` of a binary tree, invert the tree, and return *its root*.
 
 ## 💡 Solution 1: BFS
 ### Approach
-- 
+- Check nodes each level and swap
 
 ### Complexity Analysis
 - **Time Complexity**: O(N)
@@ -94,7 +94,7 @@ class Solution(object):
 
 ## 💡 Solution 2: Recursive
 ### Approach
-- Recursively check and swap the left and right node of the subtree
+- Recursively check and swap the left and right nodes of the subtree
 
 ### Complexity Analysis
 - **Time Complexity**: O(N)
@@ -149,4 +149,4 @@ class Solution:
 No hints available.
 
 ### Reflections
--
+- Get used to BFS and Recursive
