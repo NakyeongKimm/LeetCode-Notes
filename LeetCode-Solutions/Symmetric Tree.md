@@ -98,8 +98,8 @@ class Solution(object):
 
 ## 💡 Solution 2: Recursive
 ### Approach
-- Make a function that get input of the same root twice and compare left and right of each.
-- 
+- Make a function that takes two nodes (initially the same root) and compares them in a mirrored way: check if their values are equal, then recursively compare t1's left with t2's right, and t1's right with t2's left.
+- Recursively call the function to check subtrees.
 
 ### Complexity Analysis
 - **Time Complexity**: O(n)
@@ -130,4 +130,4 @@ class Solution:
 No hints available.
 
 ### Reflections
--
+- Recursive approach to use helper function!
