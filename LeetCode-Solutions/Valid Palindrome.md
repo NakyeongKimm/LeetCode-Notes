@@ -142,4 +142,7 @@ No hints available.
 
 ### Reflections
 - Make two pointers using left and right
-- python slicing: make reversed string using [::-1]
+- python slicing: make reversed string using 
+```python
+  string[::-1]
+```
