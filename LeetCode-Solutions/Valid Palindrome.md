@@ -43,9 +43,9 @@ Given a string `s`, return `true`* if it is a palindrome, or *`false`* otherwise
 
 ---
 
-## 💡 Solution 1: Filter and 
+## 💡 Solution 1: Compare based on indices
 ### Approach
-- 
+- after filtering, compare based on indices
 
 ### Complexity Analysis
 - **Time Complexity**: O(N)
@@ -77,31 +77,61 @@ class Solution(object):
 
 ---
 
-## 💡 Solution 2: (Name)
+## 💡 Solution 2: Two Pointers
 ### Approach
-- 
+- use two pointers and compare only valid characters
 
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O(N)
+- **Space Complexity**: O(1)
+	- save only two pointers
 
 ```python
-# Solution 2 Code Here
+class Solution(object):
+	def isPalindrome(self, s):
+		"""
+		:type s: str
+		:rtype: bool
+		"""
+		
+		left = 0
+		right = len(s) - 1
+		
+		while left < right:
+	
+			while left < right and not s[left].isalnum():
+				left += 1
+			
+			while left < right and not s[right].isalnum():		
+				right -= 1
+			
+			if s[left].lower() != s[right].lower():		
+				return False
+			
+			left += 1
+			right -= 1
+		
+		return True
 ```
 
 
 ---
 
-## 💡 Solution 3: (Name)
+## 💡 Solution 3: Python Slicing
 ### Approach
-- 
+- Compare with reversed string
 
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O(N)
+- **Space Complexity**: O(N)
 
 ```python
-# Solution 3 Code Here
+class Solution(object):
+	def isPalindrome(self, s):
+		
+		filtered = ''.join(char.lower() for char in s if char.isalnum())
+
+		return filtered == filtered[::-1] 
 ```
 
 
@@ -111,4 +141,5 @@ class Solution(object):
 No hints available.
 
 ### Reflections
--
+- Make two pointers using left and right
+- python slicing: make reversed string using [::-1]
