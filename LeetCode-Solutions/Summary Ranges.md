@@ -1,9 +1,9 @@
 ---
-created: "2026-01-23"
-completed: false
+created: 2026-01-23
+completed: true
 leetcode-index: "228"
-link: "https://leetcode.com/problems/summary-ranges"
-difficulty: "Easy"
+link: https://leetcode.com/problems/summary-ranges
+difficulty: Easy
 tags:
   - programming/practice
   - leetcode/problem
