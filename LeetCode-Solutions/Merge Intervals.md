@@ -76,9 +76,9 @@ class Solution(object):
 			start = intervals[i][0]	
 			end = intervals[i][1]
 		
-			res.append([start, end])
+		res.append([start, end])
 		
-			return res
+		return res
 ```
 
 
