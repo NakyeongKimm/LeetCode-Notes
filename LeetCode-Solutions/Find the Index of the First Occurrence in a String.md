@@ -1,0 +1,102 @@
+---
+created: "2026-01-27"
+completed: false
+leetcode-index: "28"
+link: "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string"
+difficulty: "Easy"
+tags:
+  - programming/practice
+  - leetcode/problem
+---
+
+# Find the Index of the First Occurrence in a String
+
+## 📝 Problem Description
+Given two strings `needle` and `haystack`, return the index of the first occurrence of `needle` in `haystack`, or `-1` if `needle` is not part of `haystack`.
+
+ 
+
+>[!Example]+ Example 1
+>**Input**: `haystack = "sadbutsad", needle = "sad"`
+>**Output**: `0`
+>**Explanation**:
+>"sad" occurs at index 0 and 6. The first occurrence is at index 0, so we return 0. 
+
+>[!Example]+ Example 2
+>**Input**: `haystack = "leetcode", needle = "leeto"`
+>**Output**: `-1`
+>**Explanation**:
+>"leeto" did not occur in "leetcode", so we return -1. 
+
+>[!warning]+ Constraints
+>- `1 <= haystack.length, needle.length <= 10^4`
+>
+>- `haystack` and `needle` consist of only lowercase English characters.
+
+---
+
+## 💡 Solution 1: Compare with slicing
+### Approach
+- compare the strings with slicing
+
+### Complexity Analysis
+- **Time Complexity**: O($M*N$)
+- **Space Complexity**: O(1)
+
+```python
+class Solution(object):
+	def strStr(self, haystack, needle):
+		"""
+		:type haystack: str
+		:type needle: str
+		:rtype: int
+		"""
+		
+		if haystack == "" or needle == "":
+			return -1
+		
+		for i in range(0, len(haystack)-len(needle)+1):
+			if haystack[i:i+len(needle)] == needle:
+				return i
+		
+		return -1
+```
+
+
+---
+
+## 💡 Solution 2: (Name)
+### Approach
+- 
+
+### Complexity Analysis
+- **Time Complexity**: O()
+- **Space Complexity**: O()
+
+```python
+# Solution 2 Code Here
+```
+
+
+---
+
+## 💡 Solution 3: (Name)
+### Approach
+- 
+
+### Complexity Analysis
+- **Time Complexity**: O()
+- **Space Complexity**: O()
+
+```python
+# Solution 3 Code Here
+```
+
+
+---
+
+## 📓 Hints & Reflections
+No hints available.
+
+### Reflections
+-
