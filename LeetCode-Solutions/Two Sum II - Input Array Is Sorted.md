@@ -1,9 +1,9 @@
 ---
-created: "2026-01-28"
-completed: false
+created: 2026-01-28
+completed: true
 leetcode-index: "167"
-link: "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted"
-difficulty: "Medium"
+link: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted
+difficulty: Medium
 tags:
   - programming/practice
   - leetcode/problem
