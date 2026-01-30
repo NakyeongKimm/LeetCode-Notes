@@ -109,16 +109,38 @@ class Solution:
 
 ---
 
-## 💡 Solution 2: (Name)
+## 💡 Solution 2: Use 2Sum hashmap on 3Sum
 ### Approach
-- 
-
+- save already seen values in seen as {val: val1_idx}
+- complement is the third number that the sum of 2 is looking for to sum up to 0
+- if we find the complement in seen and its val1_idx matches the current val1_idx, add to res
+- use set to deal with duplicates and return a list comprehension form
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O($N^2$)
+- **Space Complexity**: O(N)
 
 ```python
-# Solution 2 Code Here
+class Solution:
+
+	def threeSum(self, nums: List[int]) -> List[List[int]]:
+		
+		res = set()
+		dups = set()
+		seen = {}
+		
+		for i, val1 in enumerate(nums):
+			if val1 not in dups:
+				dups.add(val1)
+			
+				for j, val2 in enumerate(nums[i+1:]):
+					complement = -val1 - val2
+					
+					if complement in seen and seen[complement] == i:
+						res.add(tuple(sorted([val1, val2, complement])))
+					
+					seen[val2] = i
+		
+		return [list(t) for t in res]
 ```
 
 
@@ -150,4 +172,4 @@ class Solution:
 >The second train of thought for two-sum is, without changing the array, can we use additional space somehow? Like maybe a hash map to speed up the search?
 
 ### Reflections
--
+- While using sort and two pointers already have optimal complexities, knowing the application of 2sum idea on 3sum would be beneficial.
