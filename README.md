@@ -3,7 +3,7 @@
 Personal Obsidian vault for tracking coding problem solutions and algorithm study. Automatically backed up from my local environment.
 
 ## Obsidian Knowledge Graph
-![[Screenshot 2026-01-30 at 2.48.07 PM.png]]
+![[graph_view.png]]
 
 <p align="center">
   <img src="https://img.shields.io/badge/Last%20Updated-2026--01--30-blue?style=flat-square">
