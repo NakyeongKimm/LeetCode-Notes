@@ -5,8 +5,8 @@ leetcode-index: "100"
 link: https://leetcode.com/problems/same-tree
 difficulty: Easy
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/binary-tree
 ---
 
 # Same Tree

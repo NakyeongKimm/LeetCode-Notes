@@ -3,12 +3,10 @@
 Personal Obsidian vault for tracking coding problem solutions and algorithm study. Automatically backed up from my local environment.
 
 ## Obsidian Knowledge Graph
-<p align="center">
-  <img src="assets/graph-view.png" width="800" title="Obsidian Graph View">
-</p>
+![[Screenshot 2026-01-30 at 2.48.07 PM.png]]
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Last%20Updated-2026--01--02-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Last%20Updated-2026--01--30-blue?style=flat-square">
 </p>
 
 ## Schedule Log 

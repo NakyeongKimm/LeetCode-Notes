@@ -5,8 +5,8 @@ leetcode-index: "48"
 link: https://leetcode.com/problems/rotate-image
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/matrix
 ---
 
 # Rotate Image

@@ -1,11 +1,10 @@
 ---
-created: "2026-01-27"
+created: 2026-01-27
 completed: false
 leetcode-index: "28"
-link: "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string"
-difficulty: "Easy"
+link: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string
+difficulty: Easy
 tags:
-  - programming/practice
   - leetcode/problem
 ---
 

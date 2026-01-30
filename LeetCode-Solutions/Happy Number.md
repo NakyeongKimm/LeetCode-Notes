@@ -5,8 +5,8 @@ leetcode-index: "202"
 link: https://leetcode.com/problems/happy-number
 difficulty: Easy
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/hash-table
 ---
 
 # Happy Number

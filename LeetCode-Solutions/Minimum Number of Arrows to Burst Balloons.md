@@ -5,8 +5,8 @@ leetcode-index: "452"
 link: https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/intervals
 ---
 
 # Minimum Number of Arrows to Burst Balloons

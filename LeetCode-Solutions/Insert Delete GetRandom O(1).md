@@ -5,7 +5,6 @@ leetcode-index: "380"
 link: https://leetcode.com/problems/insert-delete-getrandom-o1
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
 ---
 

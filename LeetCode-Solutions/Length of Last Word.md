@@ -5,7 +5,6 @@ leetcode-index: "58"
 link: https://leetcode.com/problems/length-of-last-word
 difficulty: Easy
 tags:
-  - programming/practice
   - leetcode/problem
 ---
 

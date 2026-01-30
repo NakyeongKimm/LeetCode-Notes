@@ -5,8 +5,8 @@ leetcode-index: "125"
 link: https://leetcode.com/problems/valid-palindrome
 difficulty: Easy
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/pointers
 ---
 
 # Valid Palindrome

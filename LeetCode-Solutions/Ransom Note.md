@@ -8,7 +8,6 @@ tags:
   - leetcode/hash-table
   - leetcode/string
   - leetcode/counting
-  - programming/practice
   - leetcode/problem
 ---
 # Ransom Note

@@ -5,8 +5,8 @@ leetcode-index: "2"
 link: https://leetcode.com/problems/add-two-numbers
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/linked-list
 ---
 
 # Add Two Numbers

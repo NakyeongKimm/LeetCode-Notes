@@ -5,8 +5,8 @@ leetcode-index: "54"
 link: https://leetcode.com/problems/spiral-matrix
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/matrix
 ---
 
 # Spiral Matrix

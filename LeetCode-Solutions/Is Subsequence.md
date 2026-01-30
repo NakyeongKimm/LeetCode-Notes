@@ -5,8 +5,8 @@ leetcode-index: "392"
 link: https://leetcode.com/problems/is-subsequence
 difficulty: Easy
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/pointers
 ---
 
 # Is Subsequence

@@ -5,7 +5,6 @@ leetcode-index: "12"
 link: https://leetcode.com/problems/integer-to-roman
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
 ---
 

@@ -5,8 +5,8 @@ leetcode-index: "228"
 link: https://leetcode.com/problems/summary-ranges
 difficulty: Easy
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/intervals
 ---
 
 # Summary Ranges

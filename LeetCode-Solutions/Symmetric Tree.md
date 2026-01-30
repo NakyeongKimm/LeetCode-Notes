@@ -5,8 +5,8 @@ leetcode-index: "101"
 link: https://leetcode.com/problems/symmetric-tree
 difficulty: Easy
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/binary-tree
 ---
 
 # Symmetric Tree

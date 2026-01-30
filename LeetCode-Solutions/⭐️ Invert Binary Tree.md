@@ -5,8 +5,8 @@ leetcode-index: "226"
 link: https://leetcode.com/problems/invert-binary-tree
 difficulty: Easy
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/binary-tree
 ---
 
 # Invert Binary Tree

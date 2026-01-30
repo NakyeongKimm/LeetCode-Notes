@@ -5,7 +5,6 @@ leetcode-index: "{{VALUE:id}}"
 link: "{{VALUE:link}}"
 difficulty: "{{VALUE:difficulty}}"
 tags:
-  - programming/practice
   - leetcode/problem
 ---
 

@@ -8,7 +8,6 @@ tags:
   - leetcode/array
   - leetcode/dynamic-programming
   - leetcode/greedy
-  - programming/practice
   - leetcode/problem
 ---
 # Jump Game

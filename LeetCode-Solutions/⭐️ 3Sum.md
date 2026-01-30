@@ -5,8 +5,8 @@ leetcode-index: "15"
 link: https://leetcode.com/problems/3sum
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/pointers
 ---
 
 # 3Sum

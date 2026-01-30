@@ -5,8 +5,8 @@ leetcode-index: "141"
 link: https://leetcode.com/problems/linked-list-cycle
 difficulty: Easy
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/linked-list
 ---
 
 # Linked List Cycle

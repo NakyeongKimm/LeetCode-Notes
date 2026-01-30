@@ -5,8 +5,8 @@ leetcode-index: "105"
 link: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/binary-tree
 ---
 
 # Construct Binary Tree from Preorder and Inorder Traversal

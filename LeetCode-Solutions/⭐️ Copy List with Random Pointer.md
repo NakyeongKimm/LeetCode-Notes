@@ -5,8 +5,8 @@ leetcode-index: "138"
 link: https://leetcode.com/problems/copy-list-with-random-pointer/
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/linked-list
 ---
 
 # Copy List with Random Pointer

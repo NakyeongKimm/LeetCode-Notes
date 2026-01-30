@@ -8,7 +8,6 @@ tags:
   - leetcode/hash-table
   - leetcode/string
   - leetcode/sorting
-  - programming/practice
   - leetcode/problem
 ---
 # Valid Anagram

@@ -5,8 +5,8 @@ leetcode-index: "21"
 link: https://leetcode.com/problems/merge-two-sorted-lists
 difficulty: Easy
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/linked-list
 ---
 
 # Merge Two Sorted Lists

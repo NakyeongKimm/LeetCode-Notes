@@ -5,8 +5,8 @@ leetcode-index: "104"
 link: https://leetcode.com/problems/maximum-depth-of-binary-tree
 difficulty: Easy
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/binary-tree
 ---
 
 # Maximum Depth of Binary Tree

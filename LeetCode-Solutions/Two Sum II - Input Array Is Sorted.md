@@ -5,8 +5,8 @@ leetcode-index: "167"
 link: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/pointers
 ---
 
 # Two Sum II - Input Array Is Sorted

@@ -5,8 +5,8 @@ leetcode-index: "57"
 link: https://leetcode.com/problems/insert-interval
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/intervals
 ---
 
 # Insert Interval

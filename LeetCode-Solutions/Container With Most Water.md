@@ -5,8 +5,8 @@ leetcode-index: "11"
 link: https://leetcode.com/problems/container-with-most-water
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/pointers
 ---
 
 # Container With Most Water

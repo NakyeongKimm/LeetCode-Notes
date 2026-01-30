@@ -5,8 +5,8 @@ leetcode-index: "36"
 link: https://leetcode.com/problems/valid-sudoku
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/matrix
 ---
 
 # Valid Sudoku

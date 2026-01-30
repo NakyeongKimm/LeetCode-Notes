@@ -5,7 +5,6 @@ leetcode-index: "274"
 link: https://leetcode.com/problems/h-index
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
 ---
 

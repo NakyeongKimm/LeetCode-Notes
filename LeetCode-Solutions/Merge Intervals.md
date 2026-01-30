@@ -5,8 +5,8 @@ leetcode-index: "56"
 link: https://leetcode.com/problems/merge-intervals
 difficulty: Medium
 tags:
-  - programming/practice
   - leetcode/problem
+  - leetcode/intervals
 ---
 
 # Merge Intervals
