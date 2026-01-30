@@ -3,7 +3,7 @@
 Personal Obsidian vault for tracking coding problem solutions and algorithm study. Automatically backed up from my local environment.
 
 ## Obsidian Knowledge Graph
-![[graph_view.png](assets/graph_view.png)
+![graph_view](assets/graph_view.png)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Last%20Updated-2026--01--30-blue?style=flat-square">
