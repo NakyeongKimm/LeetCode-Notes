@@ -1,8 +1,8 @@
 ---
-created: "2026-01-31"
+created: "2026-02-01"
 completed: false
 leetcode-index: "9"
-link: "https://leetcode.com/problems/palindrome-number/description/?envType=study-plan-v2&envId=top-interview-150"
+link: "https://leetcode.com/problems/palindrome-number"
 difficulty: "Easy"
 tags:
   - leetcode/problem
@@ -11,57 +11,94 @@ tags:
 # Palindrome Number
 
 ## 📝 Problem Description
-Given an integer x, return true if x is a palindrome, and false otherwise.     Example 1:  Input: x = 121 Output: true Explanation: 121 reads as 121 from left to right and from right to left. Example 2:  Input: x = -121 Output: false Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome. Example 3:  Input: x = 10 Output: false Explanation: Reads 01 from right to left. Therefore it is not a palindrome.    Constraints:  -231 <= x <= 231 - 1    Follow up: Could you solve it without converting the integer to a string?
+Given an integer `x`, return `true`* if *`x`* is a *<span data-keyword="palindrome-integer">*palindrome*</span>*, and *`false`* otherwise*.
+
+ 
+
+>[!Example]+ Example 1
+>**Input**: `x = 121`
+>**Output**: `true`
+>**Explanation**:
+>121 reads as 121 from left to right and from right to left. 
+
+>[!Example]+ Example 2
+>**Input**: `x = -121`
+>**Output**: `false`
+>**Explanation**:
+>From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome. 
+
+>[!Example]+ Example 3
+>**Input**: `x = 10`
+>**Output**: `false`
+>**Explanation**:
+>Reads 01 from right to left. Therefore it is not a palindrome. 
+
+>[!warning]+ Constraints
+>- `-2^31 <= x <= 2^31 - 1`
+>
+>
+>
+>
+>
+>
+>Follow up: Could you solve it without converting the integer to a string?
 
 ---
 
-## 💡 Solution 1: (Name)
+## 💡 Solution 1: String Slicing
 ### Approach
-- 
+- Compare the string of the original number and reversed number and return boolean
 
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O(N)
+- **Space Complexity**: O(N)
 
 ```python
-# Solution 1 Code Here
+class Solution: 
+	def isPalindrome(self, x: int) -> bool: 
+		xs = str(x) 
+		return (xs == xs[::-1])
 ```
 
 
 ---
 
-## 💡 Solution 2: (Name)
+## 💡 Solution 2: Compare with reversed
 ### Approach
-- 
+- Two edge cases: negative numbers, numbers that end with 0 (e.g. 10, 1010, etc.)
+- compare the first n digits and reversed n digits
+	- return 
 
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O($LogN$)
+	- loop for the number of digit times
+- **Space Complexity**: O(1)
+	- Use three variables: reversed, q, and r
 
 ```python
-# Solution 2 Code Here
-```
+class Solution:
 
-
----
-
-## 💡 Solution 3: (Name)
-### Approach
-- 
-
-### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
-
-```python
-# Solution 3 Code Here
+	def isPalindrome(self, x: int) -> bool:
+		
+		if x < 0 or (x > 0 and x % 10 == 0):
+			return False
+		
+		reversed = 0
+		q = x
+		
+		while q > reversed:
+			q, r = divmod(q, 10)
+			reversed = reversed * 10 + r
+		
+		return (q == reversed) or (q == reversed//10)
 ```
 
 
 ---
 
 ## 📓 Hints & Reflections
-
+>[!Hint]- Hint 1
+>Beware of overflow when you reverse the integer.
 
 ### Reflections
 -
