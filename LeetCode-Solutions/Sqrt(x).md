@@ -1,9 +1,9 @@
 ---
-created: "2026-02-01"
-completed: false
+created: 2026-02-01
+completed: true
 leetcode-index: "69"
-link: "https://leetcode.com/problems/sqrtx"
-difficulty: "Easy"
+link: https://leetcode.com/problems/sqrtx
+difficulty: Easy
 tags:
   - leetcode/problem
 ---
@@ -95,6 +95,7 @@ class Solution:
 ## 💡 Solution 3: Newton's Method
 ### Approach
 - Newton's method: y_new = y_old - f(y_old) / (2y_old)
+- Starting from the very far point, make a guess using the gradient of the tangent line
 
 ### Complexity Analysis
 - **Time Complexity**: O($log (log x)$)
@@ -126,4 +127,4 @@ class Solution:
 >Use the sorted property of integers to reduced the search space. (Credits: @annujoshi)
 
 ### Reflections
--
+- Get used to binary search first and then, Newton's method for reference.
