@@ -1,9 +1,9 @@
 ---
-created: "2026-02-01"
-completed: false
+created: 2026-02-01
+completed: true
 leetcode-index: "9"
-link: "https://leetcode.com/problems/palindrome-number"
-difficulty: "Easy"
+link: https://leetcode.com/problems/palindrome-number
+difficulty: Easy
 tags:
   - leetcode/problem
 ---
@@ -67,7 +67,7 @@ class Solution:
 ### Approach
 - Two edge cases: negative numbers, numbers that end with 0 (e.g. 10, 1010, etc.)
 - compare the first n digits and reversed n digits
-	- return 
+	- return in 'or' form to handle both even and odd digit cases
 
 ### Complexity Analysis
 - **Time Complexity**: O($LogN$)
@@ -101,4 +101,4 @@ class Solution:
 >Beware of overflow when you reverse the integer.
 
 ### Reflections
--
+- idea: return in 'or' form to handle both even and odd digit cases
