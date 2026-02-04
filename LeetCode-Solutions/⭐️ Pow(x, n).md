@@ -46,7 +46,8 @@ Implement <a href="http://www.cplusplus.com/reference/valarray/pow/" target="_bl
 
 ## 💡 Solution 1:  Repeat for n/2 times
 ### Approach
-- Repeat 
+- When n is negative, change x and n so that we can use the same logic for both positive and negative n.
+- Repeat n/2 times using result and current variables based on odd and even
 
 ### Complexity Analysis
 - **Time Complexity**: O(LogN)
@@ -78,7 +79,8 @@ class Solution:
 
 ## 💡 Solution 2: Recursive
 ### Approach
-- 
+- Do the same task with solution 1 but make and use recursive function.
+- Set the base line with n=0 for the recursion, regarding the fact that $x^0 = 1$
 
 ### Complexity Analysis
 - **Time Complexity**: O(logN)
@@ -102,21 +104,6 @@ class Solution(object):
 				return half * half * x 
 				
 		return power(x, n)
-```
-
-
----
-
-## 💡 Solution 3: (Name)
-### Approach
-- 
-
-### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
-
-```python
-# Solution 3 Code Here
 ```
 
 
