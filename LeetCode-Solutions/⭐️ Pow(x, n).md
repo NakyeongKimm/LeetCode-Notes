@@ -44,31 +44,64 @@ Implement <a href="http://www.cplusplus.com/reference/valarray/pow/" target="_bl
 
 ---
 
-## 💡 Solution 1: (Name)
+## 💡 Solution 1:  Repeat for n/2 times
 ### Approach
-- 
+- Repeat 
 
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O(LogN)
+- **Space Complexity**: O(1)
 
 ```python
-# Solution 1 Code Here
+class Solution: 
+	def myPow(self, x: float, n: int) -> float: 
+		if n < 0: 
+			x = 1/x 
+			n = -n 
+			
+		result = 1 
+		current = x 
+		
+		while n > 0: 
+			if n % 2 == 1: 
+			result *= current 
+			n -= 1 
+			
+		current *= current 
+		n //= 2 
+			
+		return result
 ```
 
 
 ---
 
-## 💡 Solution 2: (Name)
+## 💡 Solution 2: Recursive
 ### Approach
 - 
 
 ### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
+- **Time Complexity**: O(logN)
+- **Space Complexity**: O(logN)
 
 ```python
-# Solution 2 Code Here
+class Solution(object): 
+	def myPow(self, x: float, n: int) -> float: 
+		if n < 0: 
+			x = 1/x 
+			n = -n 
+			
+		def power(x, n): 
+			if n == 0: 
+				return 1 
+			
+			half = power(x, n//2) 
+			if n % 2 == 0: 
+				return half * half 
+			else: 
+				return half * half * x 
+				
+		return power(x, n)
 ```
 
 
