@@ -64,36 +64,6 @@ class Solution(object):
 
 ---
 
-## 💡 Solution 2: (Name)
-### Approach
-- 
-
-### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
-
-```python
-# Solution 2 Code Here
-```
-
-
----
-
-## 💡 Solution 3: (Name)
-### Approach
-- 
-
-### Complexity Analysis
-- **Time Complexity**: O()
-- **Space Complexity**: O()
-
-```python
-# Solution 3 Code Here
-```
-
-
----
-
 ## 📓 Hints & Reflections
 No hints available.
 
