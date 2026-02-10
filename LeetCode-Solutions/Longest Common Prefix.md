@@ -1,9 +1,9 @@
 ---
-created: "2026-02-09"
-completed: false
+created: 2026-02-09
+completed: true
 leetcode-index: "14"
-link: "https://leetcode.com/problems/longest-common-prefix"
-difficulty: "Easy"
+link: https://leetcode.com/problems/longest-common-prefix
+difficulty: Easy
 tags:
   - leetcode/problem
 ---
