@@ -96,7 +96,8 @@ class Solution:
 
 ## 💡 Solution 2: BFS
 ### Approach
-- 
+- Same approach with DFS, just a small difference in using queue
+- Considering Python's RecursionError limit is 1,000, using queue can be safer as DFS can have 40,000 stacks in the worst case of 200*200 board.
 
 ### Complexity Analysis
 - **Time Complexity**: O(M*N)
